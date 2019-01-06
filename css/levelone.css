@@ -1,0 +1,24 @@
+body {
+  box-sizing: border-box;
+}
+#container {
+ max-width: 80%;
+ height: auto;
+ margin: 0 auto;
+ box-sizing: border-box;
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.ruta {
+  height: 80px;
+  background-color: yellow;
+  font-family: fantasy;
+  text-align: center;
+}
+
+div > .ruta:nth-child(3n+2) {
+  background-color: red;
+}
+div > .ruta:nth-child(3n) {
+  background-color: orange;
+}
