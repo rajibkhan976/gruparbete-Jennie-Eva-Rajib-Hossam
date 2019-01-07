@@ -8,6 +8,7 @@ body {
  box-sizing: border-box;
  display: grid;
  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+ position: relative;
 }
 .ruta {
   height: 80px;
@@ -21,4 +22,21 @@ div > .ruta:nth-child(3n+2) {
 }
 div > .ruta:nth-child(3n) {
   background-color: orange;
+}
+#container > img {
+  position: absolute;
+}
+#container img:first-of-type {
+  left: 33%;
+  top: 5%;
+  transform: rotate(-15deg);
+}
+#container img:nth-of-type(2) {
+  left: 34%;
+  top: 15%;
+  transform: rotate(-130deg);
+}
+#container img:nth-of-type(3) {
+  left: 40%;
+  top: 50%;
 }
