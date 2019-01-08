@@ -1,0 +1,18 @@
+div {
+  width: 300px;
+  height: 100px;
+  background-color: forestgreen;
+}
+
+p {
+  font-family: verdana;
+color: lime;
+font-size: 48px;
+
+}
+
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
