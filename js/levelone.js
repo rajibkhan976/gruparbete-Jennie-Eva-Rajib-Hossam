@@ -1,7 +1,9 @@
+var playerStrike = document.getElementById('play');
+playerStrike.addEventListener('click', levelOne);
+var possibleScore = [12,11,10,9,8,7,6,5,4,3,2,1];
+var playersPosition = 0, playerGoal = 50, goalDiff = 0;
 function levelOne () {
-  var possibleScore = [12,11,10,9,8,7,6,5,4,3,2,1];
-  var playersPosition = 0, playerGoal = 50, goalDiff = 0;
-  for (var c = 0; playersPosition < playerGoal; ) {
+  for (var c = 0; c < 1; c++) {
       goalDiff = playerGoal - playersPosition;
       console.log("Your are " + goalDiff + " behind from your goal");
       var randomScore = Math.floor(Math.random() * possibleScore.length);
@@ -23,7 +25,7 @@ function levelOne () {
       }
       if (playersPosition === playerGoal) {
         console.log("You won the game");
-        break;
+        playersPosition = 0;
       }
   }
 

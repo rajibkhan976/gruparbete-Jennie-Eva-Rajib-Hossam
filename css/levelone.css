@@ -36,7 +36,9 @@ div > .ruta:nth-child(3n) {
   top: 15%;
   transform: rotate(-130deg);
 }
-#container img:nth-of-type(3) {
+#container > a img:only-child {
+  position: absolute;
   left: 40%;
   top: 50%;
+  transform: rotate(0deg);
 }
