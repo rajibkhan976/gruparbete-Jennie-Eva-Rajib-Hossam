@@ -59,7 +59,7 @@ $(document).ready(function(){
         }
         $(remCSS).css("background-color", "");
         if (playersPosition == 40) {
-          $('#ladder').text("You have got a ladder.");
+          $('#snake').text("You have got a ladder.");
           playersPosition = 50;
           z = true;
           htmlClass = ".fifty";
