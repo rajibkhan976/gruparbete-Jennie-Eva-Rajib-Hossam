@@ -27,12 +27,12 @@ $(document).ready(function(){
         $('#score').text("You scored " + playerScore);
         console.log("You have scored " + playerScore);
         if (goalDiff < playerScore) {
-          $('#snake').text("You have scored more than needed, so you need to strike agaian");
-          console.log("You have scored more than needed so you need to strike agaian");
+          $('#snake').text("You have scored more than needed, so you need to strike again");
+          console.log("You have scored more than needed so you need to strike again");
           continue;
         }
         playersPosition += playerScore;
-        $('#life').text("You have " + liv + " lifes.");
+        $('#life').text("You have " + liv + " lives.");
         $('#position').text("Your position is " + playersPosition);
         console.log("Your current position is " + playersPosition);
         $('#ladder').text("");
