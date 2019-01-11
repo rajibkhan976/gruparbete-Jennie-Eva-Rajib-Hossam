@@ -1,8 +1,8 @@
 body {
   box-sizing: border-box;
+  background-color: teal !important;
 }
-#container {
- max-width: 80%;
+#board {
  height: auto;
  margin: 0 auto;
  box-sizing: border-box;
@@ -41,4 +41,22 @@ div > .ruta:nth-child(3n) {
   left: 40%;
   top: 50%;
   transform: rotate(0deg);
+}
+.five , .twelve , .forty {
+  background-image: url("../img/ladder.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 40% 50%;
+}
+.twentyfour , .thirtythree , .fortythree {
+  background-image: url("../img/snake.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 40% 50%;
+}
+.fortynine {
+  background-image: url("../img/life.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 40% 50%;
 }
