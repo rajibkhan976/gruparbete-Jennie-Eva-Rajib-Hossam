@@ -88,7 +88,6 @@ $(document).ready(function(){
         if (playersPosition == 40) {
           $('#snake').text("You have got a ladder.");
           playersPosition = 50;
-          z = true;
           htmlClass = ".fifty";
           remCSS = ".fifty";
           console.log(htmlClass);
@@ -98,6 +97,11 @@ $(document).ready(function(){
           $('#result').text("You won the game.");
           console.log("You won the game");
           playersPosition = 0;
+          z = true;
+          if (z == true) {
+            var url = "file:///E:/0%201st%20Sem%20Linnaeus/Git/gruparbete-Jennie-Eva-Rajib-Hossam/index.html";
+            $(location).attr('href',url);
+          }
         }
         //Checking whether the player has been beaten by a snake
         if (playersPosition == 43) {
@@ -124,12 +128,16 @@ $(document).ready(function(){
         }
         //Checking whether the player has reached the goal
         if (playersPosition === playerGoal) {
-          z = true;
           $('#result').text("You won the game.");
           $('#snake').text("");
           $('#ladder').text("");
           console.log("You won the game");
           playersPosition = 0;
+          z = true;
+          if (z == true) {
+            var url = "file:///E:/0%201st%20Sem%20Linnaeus/Git/gruparbete-Jennie-Eva-Rajib-Hossam/index.html";
+            $(location).attr('href',url);
+          }
         }
     }
   }

@@ -9,6 +9,7 @@ $(document).ready(function(){
   var movesMatch = 0;
   var timerStarted = false;
   var timeleft;
+  var z = false;
   //moves = tar emot räkningen av antal drag och sedan skriver vi ut längden//
   //2d array//
   var moves = [
@@ -83,12 +84,18 @@ $(document).ready(function(){
   //en popup(modal) om det är åtta matchningar före tiden är slut
   function winner() {
     if (movesMatch === 8) {
-      $('#exampleModal').modal('show');
       $('#result').text("Congratulations!");
+      $('#exampleModal').modal('show');
+      z = true;
       console.log("Congratulations!");
     }
   }
-
+$('#level3').click(function () {
+  if (z == true) {
+    var url = "file:///E:/0%201st%20Sem%20Linnaeus/Git/gruparbete-Jennie-Eva-Rajib-Hossam/index.html";
+    $(location).attr('href',url);
+  }
+});
   function checkForMatch() {
     var match = firstCard.dataset.framework === secondCard.dataset.framework;
     //originalkod: match ? disableCards() : unflipCards(); som förtydligats
