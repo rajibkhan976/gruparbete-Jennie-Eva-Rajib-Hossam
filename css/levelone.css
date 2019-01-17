@@ -2,6 +2,17 @@ body {
   box-sizing: border-box;
   background-color: teal !important;
 }
+<<<<<<< HEAD
+
+#container {
+  max-width: 80%;
+  height: auto;
+  margin: 0 auto;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  position: relative;
+=======
 #board {
  height: auto;
  margin: 0 auto;
@@ -9,7 +20,9 @@ body {
  display: grid;
  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
  position: relative;
+>>>>>>> 36050c5b9bcbd4b3063b3b5587157f230b4ba756
 }
+
 .ruta {
   height: 80px;
   background-color: yellow;
@@ -17,30 +30,38 @@ body {
   text-align: center;
 }
 
-div > .ruta:nth-child(3n+2) {
+div>.ruta:nth-child(3n+2) {
   background-color: red;
 }
-div > .ruta:nth-child(3n) {
+
+div>.ruta:nth-child(3n) {
   background-color: orange;
 }
-#container > img {
+
+#container>img {
   position: absolute;
 }
+
 #container img:first-of-type {
   left: 33%;
   top: 5%;
   transform: rotate(-15deg);
 }
+
 #container img:nth-of-type(2) {
   left: 34%;
   top: 15%;
   transform: rotate(-130deg);
 }
-#container > a img:only-child {
+
+#container>a img:only-child {
   position: absolute;
   left: 40%;
   top: 50%;
   transform: rotate(0deg);
+<<<<<<< HEAD
+}
+=======
 }
 .five , .twelve , .forty {
   background-image: url("../img/ladder.png");
@@ -60,3 +81,4 @@ div > .ruta:nth-child(3n) {
   background-position: center;
   background-size: 40% 50%;
 }
+>>>>>>> 36050c5b9bcbd4b3063b3b5587157f230b4ba756
