@@ -70,11 +70,11 @@ h4,
 h5,
 h6,
 p {
-  font-family: "Karma", sans-serif
+  font-family: "Karma", sans-serif !important;
 }
 
 h1, h3, h4, p {
-  color: #FBF3A2;
+  color: #FBF3A2 !important;
 }
 
 a {
