@@ -3,29 +3,70 @@ padding: 0;
 margin: 0;
 box-sizing: border-box;
 }
-
 body {
-  height: 100vh;
-  display: flex;
-  background-color: forestgreen;
+  background-image: url("../img/bg3.png");}
+
+/*ScorePanel*/
+ul {
+  list-style: none;
+}
+.score-panel {
+	text-align: left;
+	margin-bottom: 10px;
+  color: deeppink;
+  font-size: 35px;
 }
 
+.score-panel .stars {
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	margin: 0 5px 0 0;
+}
+
+.score-panel .stars li {
+	list-style: none;
+	display: inline-block;
+}
+.fa-star {
+	color: yellow;
+}
+
+.timer {
+	display: inline-block;
+	margin: 0 30px;
+}
+
+.score-panel .restart {
+	float: right;
+	cursor: pointer;
+}
+
+
+/*Spelplanen*/
 .memoryGame{
-  width: 640px;
-  height: 640px;
-  margin: auto;
-  display: flex;
-  flex-wrap: wrap;
-  perspective: 1000px;
+	width: 900px;
+  height: 700px;
+	background: #989048;
+	padding: 1rem;
+	border-radius: 4px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
 }
 
+/* Alla korten*/
 .memoryCard {
   position: relative;
-  width: 25%;
-  height: 25%;
+  width: 23%;
+  height: 23%;
   transform: scale(1);
   transform-style: preserve-3d;
   transition: .5s;
+  border-radius: 10px;
+	cursor: pointer;
+  box-shadow: 1px 1px 5px 0 rgba(46, 61, 73, 0.5);
 
 }
 .memoryCard: active {
@@ -36,7 +77,11 @@ body {
 .memoryCard.flip {
   transform:rotateY(180deg);
 }
+.memoryCard.hide{
+  transform:rotateY(0deg);
+}
 
+/* både fram- och baksida av kort*/
 .front,
 .back {
   width: 100%;
@@ -47,6 +92,14 @@ body {
   backface-visibility: hidden;
 }
 
+/*Framsida av kort*/
 .front {
   transform: rotateY(180deg);
+  background-color: #cff173;
+  border: 3px solid #d0fe1e;
+
+}
+/*baksida av kort*/
+.back{
+  border: 1px solid #6bffff;
 }
