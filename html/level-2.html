@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+  <link rel="stylesheet" href="../CSS/style.css">
+  <link type="text/css" rel="stylesheet" href="../css/memory.css">
+
+
+</head>
+
+<body>
+  <!-- Sidebar (hidden by default) -->
+  <nav class="overlay" style="display:none;z-index:2;width:18%;min-width:200px" id="mySidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="slidebar_close()">&times;</a>
+    <ul class="link">
+      <li><a href="#food" onclick="slidebar_close()" class="w3-bar-item w3-button">Food</a></li>
+      <li><a href="#about" onclick="slidebar_close()" class="w3-bar-item w3-button">About</a></li>
+    </ul>
+  </nav>
+
+  <!-- !PAGE CONTENT! -->
+  <div class="contaniar">
+    <header class="header1">
+      <!-- Top menu -->
+      <div class="flex-menu">
+        <div align="left" onclick="slidebar_open()">
+          <h1>☰</h1>
+        </div>
+
+        <div>
+          <h1>Memory Game</h1>
+        </div>
+        <div>
+          <!--   <h1>Mail</h1>-->
+        </div>
+      </div>
+
+    </header>
+    <header class="header2">
+
+    </header>
+    <div class="wrapper">
+      <section class="memoryGame">
+
+        <div class="memoryCard" data-framework="bigCrocodile">
+          <img class="front" src="../img/bigCrocodile.png" alt="">
+          <img class="back" src="../img/bakgrundMemory.jpg" alt="">
+        </div>
+        <div class="memoryCard" data-framework="bigCrocodile">
+          <img class="front" src="../img/bigCrocodile.png" alt="">
+          <img class="back" src="../img/bakgrundMemory.jpg" alt="">
+        </div>
+        <div class="memoryCard" data-framework="cuteElephant">
+          <img class="front" src="../img/cuteElephant.png" alt="">
+          <img class="back" src="../img/bakgrundMemory.jpg" alt="">
+        </div>
+        <div class="memoryCard" data-framework="cuteElephant">
+          <img class="front" src="../img/cuteElephant.png" alt="">
+          <img class="back" src="../img/bakgrundMemory.jpg" alt="">
+        </div>
+        <div class="memoryCard" data-framework="flytandeCrocodile">
+          <img class="front" src="../img/flytandeCrocodile.png" alt="">
+          <img class="back" src="../img/bakgrundMemory.jpg" alt="">
+        </div>
+        <div class="memoryCard" data-framework="flytandeCrocodile">
+          <img class="front" src="../img/flytandeCrocodile.png" alt="">
+          <img class="back" src="../img/bakgrundMemory.jpg" alt="">
+        </div>
+        <div class="memoryCard" data-framework="flowerElephant">
+          <img class="front" src="../img/flowerElephant.png" alt="">
+          <img class="back" src="../img/bakgrundMemory.jpg" alt="">
+        </div>
+        <div class="memoryCard" data-framework="flowerElephant">
+          <img class="front" src="../img/flowerElephant.png" alt="">
+          <img class="back" src="../img/bakgrundMemory.jpg" alt="">
+        </div>
+        <div class="memoryCard" data-framework="giraf">
+          <img class="front" src="../img/giraf.png" alt="">
+          <img class="back" src="../img/bakgrundMemory.jpg" alt="">
+        </div>
+        <div class="memoryCard" data-framework="giraf">
+          <img class="front" src="../img/giraf.png" alt="">
+          <img class="back" src="../img/bakgrundMemory.jpg" alt="">
+        </div>
+        <div class="memoryCard" data-framework="hippo">
+          <img class="front" src="../img/hippo.png" alt="">
+          <img class="back" src="../img/bakgrundMemory.jpg" alt="">
+        </div>
+        <div class="memoryCard" data-framework="hippo">
+          <img class="front" src="../img/hippo.png" alt="">
+          <img class="back" src="../img/bakgrundMemory.jpg" alt="">
+        </div>
+        <div class="memoryCard" data-framework="gladCrocodile">
+          <img class="front" src="../img/gladCrocodile.png" alt="">
+          <img class="back" src="../img/bakgrundMemory.jpg" alt="">
+        </div>
+        <div class="memoryCard" data-framework="gladCrocodile">
+          <img class="front" src="../img/gladCrocodile.png" alt="">
+          <img class="back" src="../img/bakgrundMemory.jpg" alt="">
+        </div>
+        <div class="memoryCard" data-framework="monkey">
+          <img class="front" src="../img/monkey.png" alt="">
+          <img class="back" src="../img/bakgrundMemory.jpg" alt="">
+        </div>
+        <div class="memoryCard" data-framework="monkey">
+          <img class="front" src="../img/monkey.png" alt="">
+          <img class="back" src="../img/bakgrundMemory.jpg" alt="">
+        </div>
+
+      </section>
+    </div>
+
+    <aside class="aside aside-1"></aside>
+    <aside class="aside aside-2">
+
+    </aside>
+    <!-- Footer-->
+    <div class="footer">
+      <div>
+        <h3> EC-Utbildning&copy;2019.</h3>
+      </div>
+      <div>
+        <p> <b> Grupparbete : </b>Rajib,Jennie,Hossam och Eva.</p>
+      </div>
+    </div>
+
+    <div id="herowin" class="herowin">
+      <p class="con1">Congratulations!</p>
+      <table align="center">
+        <tr>
+          <td align="left">You have passed all the stages successfully and liberated the princess.</td>
+          <td align="right"><img src="img/princess.png" width="100px" height="100px;"></td>
+        </tr>
+      </table>
+    </div>
+    <div id="dragonwin" class="dragonwin">
+      <p class="con2">Unfortunately....</p>
+      <table align="center">
+        <tr>
+          <td align="left">
+            <p>Game over!</p>
+            <p>And I won.</p>
+          </td>
+          <td align="right"><img src="img/dragon0.png" width="100px" height="100px;"></td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- End page content-->
+  </div>
+  </div>
+
+  <script src="../JS/menu.js"></script>
+  <script src="memory.js" type="text/javascript"></script>
+</body>
+
+</html>

@@ -1,17 +1,66 @@
-* {
-  margin: 0;
-  padding: 0;
+.contaniar {
+  display: flex;
+  flex-flow: row wrap;
+  font-weight: bold;
+  text-align: center;
+}
+
+.contaniar>* {
+  padding: 10px;
+  flex: 1 100%;
+}
+
+.header1 {
+  /*  background: tomato;*/
+}
+
+.header2 {
+  /*  background: #0000ff;*/
+}
+
+.footer {
+  /*  background: lightgreen;*/
 }
 
 .wrapper {
-  width: 900px;
-  height: 500;
-  margin-left: 300px;
+  text-align: center;
+  /*  background: deepskyblue;*/
 }
 
-canvas {
-  border: 1px solid #d3d3d3;
-  background-color: #f1f1f1;
+.aside-1 {
+  /*  background: gold;*/
+}
+
+.aside-2 {
+  /*  background: hotpink;*/
+}
+
+@media all and (min-width: 600px) {
+  .aside {
+    flex: 1 0 0;
+  }
+}
+
+@media all and (min-width: 800px) {
+  .wrapper {
+    flex: 3 0px;
+  }
+
+  .aside-1 {
+    order: 1;
+  }
+
+  .wrapper {
+    order: 2;
+  }
+
+  .aside-2 {
+    order: 3;
+  }
+
+  .footer {
+    order: 4;
+  }
 }
 
 h1,
@@ -19,16 +68,33 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p {
   font-family: "Karma", sans-serif
 }
 
+h1, h3, h4, p {
+  color: #FBF3A2;
+}
+
+a {
+  color: #FBF3A2;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #F2FB24;
+}
+
 body {
-  font-family: "Karma", sans-serif display: flex;
-  align-items: center;
-  justify-content: center;
-  /*background-image: url("../img/bg2.jpg");
-  background-repeat: no-repeat;*/
+  padding: 2em;
+  font-family: "Karma", sans-serif;
+  background-image: linear-gradient(to bottom, #512f03, #724a08, #92680c, #b18910, #ceac15, #ceac15, #ceac15, #ceac15, #b18910, #92680c, #724a08, #512f03);
+}
+
+ul {
+  list-style-type: none;
+  margin-left: -50px;
 }
 
 .overlay {
@@ -38,8 +104,8 @@ body {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgb(81, 47, 3);
+  background-color: rgba(81, 47, 3, 0.9);
   overflow-x: hidden;
   transition: 0.5s;
 }
@@ -55,21 +121,32 @@ body {
 .overlay a {
   padding: 8px;
   text-decoration: none;
-  font-size: 36px;
-  color: #818181;
+  font-size: 30px;
+  color: #D87D06;
   display: block;
   transition: 0.3s;
+  border-bottom: 1px solid #D87D06;
+  width: auto;
 }
 
 .overlay a:hover, .overlay a:focus {
-  color: #f1f1f1;
+  color: #FBF3A2;
 }
 
 .overlay .closebtn {
   position: absolute;
   top: 20px;
-  right: 45px;
-  font-size: 60px;
+  right: 20px;
+  font-size: 40px;
+  border: 0px;
+}
+
+.overlay .link {
+  position: absolute;
+  top: 50px;
+  left: 20px;
+  font-size: 30px;
+  width: 200px;
 }
 
 @media screen and (max-height: 450px) {
@@ -87,30 +164,63 @@ body {
 .flex-menu {
   display: flex;
   flex-wrap: nowrap;
+  align-items: center;
+  width: 900px;
+  margin-left: 20%;
+  justify-content: space-between;
 }
 
 .flex-menu>div {
-  margin: 10px;
-  width: 30%;
-  text-align: center;
-  justify-content: center;
+  margin: 0px;
+  width: 50%;
   line-height: 75px;
 }
 
-.flex-container {
-  display: flex;
-  flex-wrap: nowrap;
-  padding-top: 30;
-  margin-left: 335px;
+.herowin {
+  width: 300px;
+  height: 250px;
+  padding: 15px;
+  background-color: #3F2406;
+  border: 5px groove #F0DE21;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  color: #FBF3A2;
+  font-size: 25px;
+  visibility: hidden;
+  position: absolute;
+  margin-left: 600px;
+  margin-top: 300px;
 }
 
-.flex-container>div {
-  width: 100px;
-  height: 100px;
-  margin: 10px;
-  background: #f1f1f1;
-  border: 1px solid #d3d3d3;
+.dragonwin {
+  width: 300px;
+  height: 250px;
+  padding: 15px;
+  background-color: #3F2406;
+  border: 5px groove #F0DE21;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   text-align: center;
-  justify-content: center;
-  line-height: 75px;
+  color: #FBF3A2;
+  font-size: 25px;
+  visibility: hidden;
+  position: absolute;
+  margin-left: 600px;
+  margin-top: 300px;
+}
+
+.con1 {
+  color: #F2FB24;
+  font-size: 30px;
+}
+
+.con2 {
+  color: #FBF3A2;
+  font-size: 30px;
+}
+
+.show {
+  visibility: visible !important;
+  opacity: 100 !important;
 }
