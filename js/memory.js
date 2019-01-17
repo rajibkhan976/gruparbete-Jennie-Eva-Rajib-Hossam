@@ -161,5 +161,7 @@ $(document).ready(function(){
     }
   }
   document.body.onload = startGame();
-
+$('.back').click(function () {
+  $('.front').css('top','0px');
+});
 });
