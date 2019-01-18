@@ -24,3 +24,6 @@
   margin-top: 10px;
   padding: 18px;
 }
+.wrapper a:hover, a:visited, a:link, a:active {
+  text-decoration: none;
+}

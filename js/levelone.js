@@ -100,7 +100,7 @@ $(document).ready(function(){
           z = true;
           if (z == true) {
             var url = "file:///E:/0%201st%20Sem%20Linnaeus/Git/gruparbete-Jennie-Eva-Rajib-Hossam/index.html";
-            $(location).attr('href',url);
+            $(location).attr('href', url);
           }
         }
         //Checking whether the player has been beaten by a snake
@@ -136,7 +136,7 @@ $(document).ready(function(){
           z = true;
           if (z == true) {
             var url = "file:///E:/0%201st%20Sem%20Linnaeus/Git/gruparbete-Jennie-Eva-Rajib-Hossam/index.html";
-            $(location).attr('href',url);
+            $(location).attr('href', url);
           }
         }
     }
