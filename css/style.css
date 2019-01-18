@@ -70,17 +70,22 @@ h4,
 h5,
 h6,
 p {
+<<<<<<< HEAD
   font-family: "Karma", sans-serif;
   color: #FBF3A2;
+=======
+  font-family: "Karma", sans-serif !important;
+  color: #FBF3A2 !important;
+>>>>>>> 88a02b66b09efac49c51fe974d7218333394a415
 }
 
 a {
-  color: #FBF3A2;
+  color: #FBF3A2 !important;
   text-decoration: none;
 }
 
 a:hover {
-  color: #F2FB24;
+  color: #F2FB24 !important;
 }
 
 body {
@@ -248,5 +253,10 @@ ul {
 
 .show {
   visibility: visible !important;
+  opacity: 100 !important;
+}
+
+.hide {
+  visibility: hide !important;
   opacity: 100 !important;
 }

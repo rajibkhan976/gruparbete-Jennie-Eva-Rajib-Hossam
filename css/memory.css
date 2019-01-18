@@ -1,8 +1,45 @@
-*{
+/*{
 padding: 0;
 margin: 0;
 box-sizing: border-box;
 }
+<<<<<<< HEAD
+=======
+/*
+body {
+  background-image: url("../img/bg3.png");}
+*/
+/*ScorePanel*/
+ul {
+  list-style: none;
+}
+.score-panel {
+	text-align: left;
+	margin-bottom: 10px;
+  color: deeppink;
+  font-size: 35px;
+}
+
+.score-panel .stars {
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	margin: 0 5px 0 0;
+}
+
+.score-panel .stars li {
+	list-style: none;
+	display: inline-block;
+}
+.fa-star {
+	color: yellow;
+}
+
+.timer {
+	display: inline-block;
+	margin: 0 30px;
+}
+>>>>>>> 88a02b66b09efac49c51fe974d7218333394a415
 
 body {
   height: 100vh;
@@ -37,16 +74,39 @@ body {
   transform:rotateY(180deg);
 }
 
+<<<<<<< HEAD
 .front,
 .back {
+=======
+/* både fram- och baksida av kort*/
+.front {
+>>>>>>> 88a02b66b09efac49c51fe974d7218333394a415
   width: 100%;
   height: 100%;
   padding: 20px;
-  position: absolute;
+  position: relative;
+  top: -155px;
   border-radius: 5px;
   backface-visibility: hidden;
 }
 
 .front {
   transform: rotateY(180deg);
+<<<<<<< HEAD
+=======
+  background-color: #cff173;
+  border: 3px solid #d0fe1e;
+
+}
+/*baksida av kort*/
+.back {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  position: relative;
+  top: -155px;
+  border-radius: 5px;
+  backface-visibility: hidden;
+  border: 1px solid #6bffff;
+>>>>>>> 88a02b66b09efac49c51fe974d7218333394a415
 }

@@ -1,7 +1,13 @@
-body {
+/*body {
   box-sizing: border-box;
+<<<<<<< HEAD
 }
 
+=======
+  background-color: teal !important;
+}*/
+/*
+>>>>>>> 88a02b66b09efac49c51fe974d7218333394a415
 #container {
   max-width: 80%;
   height: auto;
@@ -10,6 +16,17 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   position: relative;
+<<<<<<< HEAD
+=======
+} */
+
+#board {
+ height: auto;
+ margin: 0 auto;
+ box-sizing: border-box;
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+>>>>>>> 88a02b66b09efac49c51fe974d7218333394a415
 }
 
 .ruta {
@@ -26,6 +43,7 @@ div>.ruta:nth-child(3n+2) {
 div>.ruta:nth-child(3n) {
   background-color: orange;
 }
+<<<<<<< HEAD
 
 #container>img {
   position: absolute;
@@ -49,3 +67,23 @@ div>.ruta:nth-child(3n) {
   top: 50%;
   transform: rotate(0deg);
 }
+=======
+.five , .twelve , .forty {
+  background-image: url("../img/ladder.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 40% 50%;
+}
+.twentyfour , .thirtythree , .fortythree {
+  background-image: url("../img/snake.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 40% 50%;
+}
+.fortynine {
+  background-image: url("../img/life.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 40% 50%;
+}
+>>>>>>> 88a02b66b09efac49c51fe974d7218333394a415

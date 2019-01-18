@@ -1,7 +1,5 @@
-function slidebar_open() {
-  document.getElementById("mySidebar").style.display = "block";
-}
 
+<<<<<<< HEAD
 function slidebar_close() {
   document.getElementById("mySidebar").style.display = "none";
 }
@@ -27,3 +25,12 @@ if (typeof(Storage) !== "undefined") {
 } else {
   document.getElementById("userNameprint").innerHTML = "Sorry, your browser does not support Web Storage...";
 }
+=======
+  function slidebar_open() {
+    document.getElementById("mySidebar").style.display = "block";
+  }
+
+  function slidebar_close() {
+    document.getElementById("mySidebar").style.display = "none";
+  }
+>>>>>>> 88a02b66b09efac49c51fe974d7218333394a415
