@@ -70,10 +70,7 @@ h4,
 h5,
 h6,
 p {
-  font-family: "Karma", sans-serif
-}
-
-h1, h3, h4, p {
+  font-family: "Karma", sans-serif;
   color: #FBF3A2;
 }
 
@@ -208,6 +205,35 @@ ul {
   position: absolute;
   margin-left: 600px;
   margin-top: 300px;
+}
+
+.login {
+  width: 300px;
+  height: 250px;
+  padding: 15px;
+  background-color: #3F2406;
+  border: 3px solid #D87D06;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  color: #FBF3A2;
+  font-size: 25px;
+  visibility: hidden;
+  position: absolute;
+  margin-left: 600px;
+  margin-top: 300px;
+}
+
+.button {
+  background-color: #3F2406;
+  border: 1px solid #D87D06;
+  color: #FBF3A2;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width: 200px;
 }
 
 .con1 {

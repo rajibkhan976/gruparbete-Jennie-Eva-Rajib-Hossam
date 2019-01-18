@@ -32,7 +32,7 @@
         <div>
           <h1>Start Game</h1>
         </div>
-        <div>
+        <div id="userNameprint">
           <!--   <h1>Mail</h1>-->
         </div>
       </div>
@@ -42,7 +42,7 @@
 
     </header>
     <div class="wrapper">
-      <div class="logo"> <a href="html/level-1.html">Stair & Snake</a></div>
+      <div class="logo" onclick='show_div("login", "show")'> <a href="html/level-1.html">Stair & Snake</a></div>
       <div class=""></div>
       <div class=""></div>
       <div class=""></div>
@@ -56,7 +56,14 @@
       <div class=""></div>
     </div>
 
-    <aside class="aside aside-1"></aside>
+    <aside class="aside aside-1">
+      <div id="savelife" class="savelife">
+        life save: 3 life;
+      </div>
+      <div id="savedemo" class="savelife">
+
+      </div>
+    </aside>
     <aside class="aside aside-2">
 
     </aside>
@@ -92,11 +99,22 @@
       </table>
     </div>
 
+    <div id="login" class="login">
+      <p class="con2">Enter your name</p>
+      <form name="loginForm" method="POST" action="" onsubmit="dosubmit()">
+        <input class="inputLogin" type="text" name="username" value="">
+        <button type="submit" name="button" class="button">Star Game</button>
+      </form>
+    </div>
     <!-- End page content-->
   </div>
   </div>
 
   <script src="JS/menu.js"></script>
+  <script src="JS/puplic.js"></script>
+  <script type="text/javascript">
+
+  </script>
 </body>
 
 </html>

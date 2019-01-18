@@ -24,3 +24,28 @@
   margin-top: 10px;
   padding: 18px;
 }
+
+.button {
+  background-color: #3F2406;
+  border: 1px solid #D87D06;
+  color: #FBF3A2;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width: 200px;
+  margin-top: 30px;
+}
+
+.inputLogin {
+  background-color: #FAFBA7;
+  border: 1px solid #D87D06;
+  color: #3F2406;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width: 130px;
+}
