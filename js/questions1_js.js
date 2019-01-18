@@ -1,3 +1,4 @@
+//Hossam
 var obj1 = {
   que: 'what are name of USA?',
   ans1: "you",

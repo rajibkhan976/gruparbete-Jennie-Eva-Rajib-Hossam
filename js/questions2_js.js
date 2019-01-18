@@ -1,3 +1,4 @@
+//Hossam
 var arr = [obj1, obj2, obj3, obj4, obj5, obj6, obj7, obj8, obj9, obj10, obj12];
 var ques = ['qus1', 'qus2', 'qus3', 'qus4', 'qus5', 'qus6'];
 var answ = ['ans1', 'ans2', 'ans3', 'ans4', 'ans5', 'ans6'];

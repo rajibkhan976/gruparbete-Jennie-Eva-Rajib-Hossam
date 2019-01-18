@@ -3,8 +3,6 @@ padding: 0;
 margin: 0;
 box-sizing: border-box;
 }
-<<<<<<< HEAD
-=======
 /*
 body {
   background-image: url("../img/bg3.png");}
@@ -39,30 +37,37 @@ ul {
 	display: inline-block;
 	margin: 0 30px;
 }
->>>>>>> 88a02b66b09efac49c51fe974d7218333394a415
 
-body {
-  height: 100vh;
-  display: flex;
-  background-color: forestgreen;
+.score-panel .restart {
+	float: right;
+	cursor: pointer;
 }
 
+
+/*Spelplanen*/
 .memoryGame{
-  width: 640px;
-  height: 640px;
-  margin: auto;
-  display: flex;
-  flex-wrap: wrap;
-  perspective: 1000px;
+	width: 900px;
+  height: 700px;
+	background: #989048;
+	padding: 1rem;
+	border-radius: 4px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
 }
 
+/* Alla korten*/
 .memoryCard {
   position: relative;
-  width: 25%;
-  height: 25%;
+  width: 23%;
+  height: 23%;
   transform: scale(1);
   transform-style: preserve-3d;
   transition: .5s;
+  border-radius: 10px;
+	cursor: pointer;
+  box-shadow: 1px 1px 5px 0 rgba(46, 61, 73, 0.5);
 
 }
 .memoryCard: active {
@@ -73,14 +78,12 @@ body {
 .memoryCard.flip {
   transform:rotateY(180deg);
 }
+.memoryCard.hide{
+  transform:rotateY(0deg);
+}
 
-<<<<<<< HEAD
-.front,
-.back {
-=======
 /* både fram- och baksida av kort*/
 .front {
->>>>>>> 88a02b66b09efac49c51fe974d7218333394a415
   width: 100%;
   height: 100%;
   padding: 20px;
@@ -90,10 +93,9 @@ body {
   backface-visibility: hidden;
 }
 
+/*Framsida av kort*/
 .front {
   transform: rotateY(180deg);
-<<<<<<< HEAD
-=======
   background-color: #cff173;
   border: 3px solid #d0fe1e;
 
@@ -108,5 +110,4 @@ body {
   border-radius: 5px;
   backface-visibility: hidden;
   border: 1px solid #6bffff;
->>>>>>> 88a02b66b09efac49c51fe974d7218333394a415
 }

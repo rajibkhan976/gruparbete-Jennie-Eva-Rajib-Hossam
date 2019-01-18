@@ -60,11 +60,11 @@
 #demo {
   background-color: #FBF3A2;
   border: 5px solid #D87D06;
-  font-size: 15px;
+  font-size: 15px !important;
   width: 300px;
   color: black !important;
   padding: 15px 32px;
   width: 270px;
   height: 100px;
-  margin-left: 280px;
+  margin-left: 315px;
 }

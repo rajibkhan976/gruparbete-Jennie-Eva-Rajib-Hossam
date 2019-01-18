@@ -1,3 +1,4 @@
+//Eva
 var bg = {
   img: ["bg1.png", "bg2.png", "bg3.png"],
   x: 0,

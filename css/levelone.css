@@ -1,13 +1,8 @@
 /*body {
   box-sizing: border-box;
-<<<<<<< HEAD
-}
-
-=======
   background-color: teal !important;
 }*/
 /*
->>>>>>> 88a02b66b09efac49c51fe974d7218333394a415
 #container {
   max-width: 80%;
   height: auto;
@@ -16,8 +11,6 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   position: relative;
-<<<<<<< HEAD
-=======
 } */
 
 #board {
@@ -26,7 +19,6 @@
  box-sizing: border-box;
  display: grid;
  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
->>>>>>> 88a02b66b09efac49c51fe974d7218333394a415
 }
 
 .ruta {
@@ -43,31 +35,6 @@ div>.ruta:nth-child(3n+2) {
 div>.ruta:nth-child(3n) {
   background-color: orange;
 }
-<<<<<<< HEAD
-
-#container>img {
-  position: absolute;
-}
-
-#container img:first-of-type {
-  left: 33%;
-  top: 5%;
-  transform: rotate(-15deg);
-}
-
-#container img:nth-of-type(2) {
-  left: 34%;
-  top: 15%;
-  transform: rotate(-130deg);
-}
-
-#container>a img:only-child {
-  position: absolute;
-  left: 40%;
-  top: 50%;
-  transform: rotate(0deg);
-}
-=======
 .five , .twelve , .forty {
   background-image: url("../img/ladder.png");
   background-repeat: no-repeat;
@@ -86,4 +53,3 @@ div>.ruta:nth-child(3n) {
   background-position: center;
   background-size: 40% 50%;
 }
->>>>>>> 88a02b66b09efac49c51fe974d7218333394a415

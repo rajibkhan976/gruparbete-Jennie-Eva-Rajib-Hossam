@@ -1,3 +1,4 @@
+//Eva
 function count_life(life, id, imgsrc) {
   var x = document.getElementById(id);
   var i = 1;

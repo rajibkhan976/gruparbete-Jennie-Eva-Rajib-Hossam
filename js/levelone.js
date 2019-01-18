@@ -1,36 +1,4 @@
-<<<<<<< HEAD
-var playerStrike = document.getElementById('play');
-playerStrike.addEventListener('click', levelOne);
-var possibleScore = [12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1];
-var playersPosition = 0,
-  playerGoal = 50,
-  goalDiff = 0;
-
-function levelOne() {
-  for (var c = 0; c < 1; c++) {
-    goalDiff = playerGoal - playersPosition;
-    console.log("Your are " + goalDiff + " behind from your goal");
-    var randomScore = Math.floor(Math.random() * possibleScore.length);
-    var playerScore = possibleScore[randomScore];
-    console.log("You have scored " + playerScore);
-    if (goalDiff < playerScore) {
-      console.log("You have scored more than needed so you need to strike agaian");
-      continue;
-    }
-    playersPosition += playerScore;
-    console.log("Your current position is " + playersPosition);
-    if (playersPosition == 5) {
-      playersPosition = 27;
-      console.log("You have get a ladder and now you are in " + playersPosition);
-    }
-    if (playersPosition == 24) {
-      playersPosition = 16;
-      console.log("You have been beaten by a snake and therefore now you are in " + playersPosition);
-    }
-    if (playersPosition === playerGoal) {
-      console.log("You won the game");
-      playersPosition = 0;
-=======
+//Rajib
 $(document).ready(function(){
   //adding event to a button and game title
   var playerStrike = document.getElementById('play');
@@ -132,7 +100,7 @@ $(document).ready(function(){
           playersPosition = 0;
           z = true;
           if (z == true) {
-            var url = "file:///E:/0%201st%20Sem%20Linnaeus/Git/gruparbete-Jennie-Eva-Rajib-Hossam/index.html";
+            var url = "../index.html";
             $(location).attr('href', url);
           }
         }
@@ -168,16 +136,10 @@ $(document).ready(function(){
           playersPosition = 0;
           z = true;
           if (z == true) {
-            var url = "file:///E:/0%201st%20Sem%20Linnaeus/Git/gruparbete-Jennie-Eva-Rajib-Hossam/index.html";
+            var url = "../index.html";
             $(location).attr('href', url);
           }
         }
->>>>>>> 88a02b66b09efac49c51fe974d7218333394a415
     }
   }
-
-}
-
-var heroLife = 8;
-
-//localStorage.setItem("heroLife", heroLife);
+});
